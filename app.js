@@ -6,12 +6,13 @@ let body = document.querySelector("body");
 let h3 = document.querySelector("h3");
 let btns = ["yellow", "red", "green", "blue"];
 let allBtns = document.querySelectorAll(".btn");
+let startBtn = document.getElementById("start-btn");
 
 let started = false;
 let level = 0;
 let highScore = 0;
 
-let start = document.getElementById("start-btn").addEventListener("click", () => {
+let start = startBtn.addEventListener("click", () => {
   if (started == false) {
     console.log("game started");
     started = true;
