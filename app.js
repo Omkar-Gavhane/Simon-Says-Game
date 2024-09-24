@@ -11,7 +11,7 @@ let started = false;
 let level = 0;
 let highScore = 0;
 
-let start = document.addEventListener("keypress", () => {
+let start = document.getElementById("start-btn").addEventListener("click", () => {
   if (started == false) {
     console.log("game started");
     started = true;
